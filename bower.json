@@ -1,0 +1,28 @@
+{
+  "name": "cialfo.assignment.web",
+  "version": "0.0.0",
+  "authors": [
+    "Gautham Ramachandran"
+  ],
+  "description": "cialfo assignment UI portal",
+  "main": "Gruntfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~1.12.2",
+    "pathjs": "*"
+  },
+  "overrides": {
+    "pathjs": {
+      "main": [
+        "path.min.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+  
+  <!-- bower:css -->
+  <link rel="stylesheet" href="lib/semantic-ui/dist/semantic.css" />
+  <!-- endbower -->
+
+
+  <!-- injector:css -->
+  <link rel="stylesheet" href="styles/app.css">
+  <!-- endinjector -->
+
+  <!-- bower:js -->
+  <script src="lib/jquery/dist/jquery.js"></script>
+  <script src="lib/semantic-ui/dist/semantic.js"></script>
+  <script src="lib/pathjs/path.min.js"></script>
+  <!-- endbower -->
+
+  <!-- injector:js -->
+  <script src="scripts/dashboard.js"></script>
+  <script src="scripts/students.js"></script>
+  <script src="scripts/utility.js"></script>
+  <script src="scripts/x.route.js"></script>
+  <script src="scripts/z.appinit.js"></script>
+  <!-- endinjector -->
+</head>
+<body> 
+  <section 
+    id="sidebar-main"
+    class="ui left vertical thin inverted labeled icon sidebar menu">
+    <a class="item" href="#/search/students">
+      <i class="users icon"></i>
+      Students
+    </a>
+    <a class="item">
+      <i class="smile icon"></i>
+      Mentors
+    </a>
+    <a class="item">
+      <i class="block layout icon"></i>
+      Colleges
+    </a>
+  </section>
+  <section class="ui menu fixed main" id="top-navbar">
+    <a class="item" id="menu-button">
+      <i class="sidebar icon"></i> Menu
+    </a>
+    <a class="item" id="dashboard-menu-btn" href="#/dashboard">
+      <i class="dashboard icon"></i> Dashboard
+    </a>
+  </section>
+  <div class="ui active dimmer" id="full-spinner">
+    <div class="ui medium text loader">Loading</div>
+  </div>
+
+  <!-- 
+    # Here loads all the partial views
+    # via $('#main-content').load(htmlUrl); 
+  -->
+  <section 
+    class="pusher container cl-main-content"
+    id="main-content">
+
+  </section>
+</body>
+</html>

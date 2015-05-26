@@ -1,0 +1,149 @@
+<div class="cl-students-list">
+  <div class="ui form">
+    <div class="one field">
+      <div class="ui right field">
+        <div class="ui right icon input">
+          <input id="search-student-field" type="text" placeholder="Search students...">
+          <i class="users icon"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  <h2 class="ui center aligned icon header">
+    <i class="circular users icon"></i>
+    Students List
+  </h2>
+  <div class="ui cards students-grid">
+  </div>
+</div>
+<div class="floating-button ui circular facebook icon button huge" id="add-student-button">
+  <i class="add icon"></i>
+</div>
+
+<div class="ui modal" id="add-student-form">
+  <i class="close icon"></i>
+  <div class="header">
+    Add Student Details
+  </div>
+  <div class="content">
+    <div class="description">
+      <div class="ui form">
+        <div class="two fields">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Full Name">
+          </div>
+          <div class="field">
+            <div class="two fields">
+              <div class="field">
+                <label>Gender</label>
+                <select class="ui search dropdown" name="gender">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>DOB</label>
+                <input type="date" name="dob" placeholder="Date of birth">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Current School</label>
+            <input type="text" name="school" placeholder="School">
+          </div>
+          <div class="field">
+            <label>Current Level</label>
+            <input type="text" name="level" placeholder="Level">
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Country</label>
+            <input type="text" name="country" placeholder="Country">
+          </div>
+          <div class="field">
+            <label>SAT Score</label>
+            <input type="text" name="score" placeholder="SAT Score">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black close button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon submit button" id="add-student-submit">
+      Submit
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+<div class="ui modal" id="update-student-form">
+  <i class="close icon"></i>
+  <div class="header">
+    Update Student Details
+  </div>
+  <div class="content">
+    <div class="description">
+      <div class="ui form">
+        <div class="two fields">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Full Name">
+          </div>
+          <div class="field">
+            <div class="two fields">
+              <div class="field">
+                <label>Gender</label>
+                <select class="ui search dropdown" name="gender">
+                  <option value="M">Male</option>
+                  <option value="F">Female</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>DOB</label>
+                <input type="date" name="dob" placeholder="Date of birth">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Current School</label>
+            <input type="text" name="school" placeholder="School">
+          </div>
+          <div class="field">
+            <label>Current Level</label>
+            <input type="text" name="level" placeholder="Level">
+          </div>
+        </div>
+        <div class="two fields">
+          <div class="field">
+            <label>Country</label>
+            <input type="text" name="country" placeholder="Country">
+          </div>
+          <div class="field">
+            <label>SAT Score</label>
+            <input type="text" name="score" placeholder="SAT Score">
+          </div>
+          <input type="hidden" name="id" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black close button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon submit button" id="update-student-submit">
+      Submit
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>

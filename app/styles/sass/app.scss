@@ -1,0 +1,22 @@
+.cl-main-content {
+  padding: 44px 10px 10px 10px
+}
+.display-none {
+  display: none !important;
+}
+.floating-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 15px !important;
+  font-size: 1.5rem !important;
+}
+.cl-students-list {
+  .header {
+    padding: 10px;
+  }
+
+  .students-grid {
+    margin: 10px;
+  }
+}
